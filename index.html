@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>portfolio</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            font-family: sans-serif;
+        }
+        .hero{
+            position: relative;
+            width: 100%;
+            height: 100vh;
+            background: #eff4fd;
+        }
+        nav{
+            display: flex;
+            width: 84%;
+            margin: auto;
+            padding: 20px 0;
+            align-items: center;
+            justify-content:space-between ;
+           
+        }
+        nav ul li{
+            display: inline;
+            list-style: none;
+            margin: 10px 20px;
+        }
+        nav ul li a{
+            text-decoration: dashed;
+            color: #000;
+            font-weight: bold;
+        }
+        nav ul li a:hover{
+            color: red;
+        }
+        .img-logo{
+            border-radius: 10%;
+        }
+        .detail{
+            margin-left: 8%;
+            margin-top: 15%;
+        }
+        .detail h1{
+            font-size: 50px;
+            color: #212121;
+            margin-bottom: 20px;
+        }
+        span{
+            color: orange;
+        }
+        .detail p{
+            color:#555;
+            line-height: 22px;
+        }
+        .detail a{
+            background: #212121;
+            padding: 10px 18px;
+            text-decoration: none;
+            font-weight: bold;
+            color: #fff;
+            display: inline-block;
+            margin: 30px 0;
+            border-radius: 5px;
+        }
+        .image{
+            width: 45%;
+            height: 80%;
+            position: absolute;
+            bottom: 0;
+            right: 100px;
+        }
+        .image img{
+            height:90%;
+            position:absolute;
+            left: 55%;
+            bottom: 0;
+            transform: translateX(-52%);
+        }
+        .image:hover .shape{
+            bottom: 40px;
+
+
+        }
+        .image:hover .img{
+            left: 45%;
+        }
+        .img{
+            border-radius: 30%;
+        }
+    </style>
+</head>
+<body>
+    <div class="hero">
+        <nav>
+            <img src="portlogo1.jpg" class="img-logo">
+            <ul>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="about.html">ABOUT ME</a></li>
+                <li><a href="hire.html">HIRE ME</a></li>
+            </ul>
+        </nav>
+        <div class="detail">
+            <h1> Hi I Am Pavan<span>Singh</span></h1>
+            <p>This is my Personal Official Fortfolio Website to showes<br>
+                Detail and work experience in web development
+            </p>
+            <a href="https://pavan7985759236.github.io/pavancv/">Download cv</a>
+        </div>
+        <div class="image">
+            <img src="download1.png" class="shape">
+            <img src="IMG-20161020-WA0013.jpg" class="img">
+        </div>
+    </div>
+</body>
+</html>
